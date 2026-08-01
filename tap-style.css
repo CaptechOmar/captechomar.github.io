@@ -178,7 +178,7 @@ body::before {
 
 .youtube{
     background-image: url(./imgs/youtube.webp);
-    background-size: 200% 150%;
+    background-size: 180% 150%;
     background-repeat: no-repeat;
     background-position: center center;
 }

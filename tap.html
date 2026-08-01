@@ -11,7 +11,10 @@
     <body>
         <div class="main">
             <div class="banner-pic-parent">
-                <img src="" class="banner-pic" alt="banner image">
+                <picture class="banner-wrapper">
+                    <source srcset="./imgs/Banner-Dark.jpg" media="(prefers-color-scheme: dark)">
+                    <img src="./imgs/Banner-Light.jpg" alt="Banner" class="banner-pic">
+                </picture>
             </div>
             <div>
                 <img scr="" class="profile-pic" atl="profile-pic">

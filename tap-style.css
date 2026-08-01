@@ -1,0 +1,230 @@
+:root {
+  color-scheme: light dark !important;
+}
+
+.banner-pic{
+        content: url('./imgs/Banner-Dark.jpg');
+        border-radius: 12px;
+        }
+.text{
+        font-family: 'sniglet';
+        text-align: center;
+    }
+.name{
+    color:light-dark(black,white);
+}
+.job,.description{
+    color: light-dark(rgb(33, 33, 33),rgb(230, 230, 230));
+}
+
+
+/* Mobile Design */
+
+@media (max-width: 768px) {
+body {
+  position: relative;
+  isolation: isolate; /* Ensures body contents render above the background */
+  
+  /* Default Theme Colors (Light Mode) */
+  --bg-color: #ffffff;
+  --pattern-opacity: 0.1;
+  --pattern-filter: none;
+  
+  background-color: var(--bg-color);
+  color: #111111; /* Default light mode text color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fullscreen Background Pattern Pseudo-element */
+body::before {
+  content: "";
+  position: fixed; /* Fixed position ensures it covers the full viewport on scroll */
+  inset: 0;
+  z-index: -1; /* Keeps the pattern strictly behind all page content */
+  
+  /* Background pattern configuration */
+  background-image: url('./imgs/pattern.png');
+  background-repeat: repeat; /* Tiles the pattern across the page */
+  background-position: center;
+  background-size: cover;
+  
+  /* Dynamic styles tied to CSS variables */
+  opacity: var(--pattern-opacity);
+  filter: var(--pattern-filter);
+  
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+    .main{
+        display: grid;
+        justify-items: center;
+    }
+    .banner-pic-parent{
+        width: 90vw;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 12px;
+        margin-top: 3%;
+        
+    }
+    .banner-pic{
+        content: url('./imgs/Banner-Dark.jpg');
+        border-radius: 12px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.2) translate(0px, 0px);
+        grid-area: 1 / 1;
+        z-index: 1;
+        }
+    .profile-pic{
+        content: url('./imgs/profile.jpg');
+        place-self: end center;
+        mix-blend-mode: normal;
+        width: 30%;
+        z-index: 2;
+        border-radius: 50%;
+        border: 4px solid light-dark(white, #131212);
+        position: relative;
+        object-fit: cover;
+        margin-top:-14%; /* Negative half avatar size pulls it up 50% */
+        margin-left: 34%;
+    }
+    .text{
+        font-family: 'Sniglet';
+        text-align: center;
+    }
+    .name{
+        font-size: x-large;
+    }
+    .job{
+        font-size: large;
+    }
+    .description{
+        font-size:medium
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        column-gap: 2%;
+        max-width: 80%;
+        width: 100%;
+        margin: 10px;
+    }
+    .contact a{
+        border: 2px solid light-dark(black,white);
+        border-radius: 9999px;
+        place-items: center;
+        height: 40px;
+        display: grid;
+        text-decoration: none;
+        color:light-dark(#fff,#000);
+        background-color: light-dark(#000,#fff);
+    }
+    /* Container */
+.link-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto new lines */
+  gap: 25px;       /* Spacing between items */
+  width: 95%;
+  max-width: 650px;
+  margin-top: 20px;
+}
+
+/* Individual Card */
+.grid-card {
+  /* Dynamic sizing formula:
+     calc(33.333% - 11px) targets 3 items per row accounting for gap.
+     flex-grow: 1 allows leftover items on the last row to fill remaining space. */
+  flex: 1 1 calc(30% - 15px);
+  min-width: 90px; /* Prevents cards from shrinking too small on mobile */
+  
+
+  /* Center content inside the card */
+  display: grid;
+  place-items:center;
+  align-content: center;
+  gap: 5px;
+
+  /* Card visual styling matching your image */
+  height: 60px;
+  border-radius: 28px;
+  color: #000000;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+.grid-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon & Label Styles */
+.instagram{
+    background-image: url(./imgs/instagram.png);
+    background-size: 105% 115%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.twitter{
+    background-image: url(./imgs/x-logo.png);
+    background-size: 101% 101%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.youtube{
+    background-image: url(./imgs/youtube.webp);
+    background-size: 200% 150%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.telegram{
+    background-image: url(./imgs/telegram.png);
+    background-size: 100% 105%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.whatsapp{
+    background-image: url(./imgs/whatsapp.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.website-icon{
+    background-image: url(./imgs/website.png);
+    background-size: 110% 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.telda{
+    background-image: url(./imgs/telda.jpg);
+    background-size: 100% 180%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.instapay{
+    background-image: url(./imgs/Instapay.png);
+    background-size: 100% 180%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* Dark Mode Overrides */
+@media (prefers-color-scheme: dark) {
+  body {
+    --bg-color: #121212;
+    --pattern-opacity: 0.2; /* Retains 70% opacity in dark mode */
+    --pattern-filter: invert(1) hue-rotate(180deg); /* Inverts pattern color */
+    
+    color: #ffffff; /* Default dark mode text color */
+  }
+  .twitter{
+        filter: invert(1) hue-rotate(180deg);
+    }
+    .banner-pic{
+        content: url('./imgs/Banner-Light.png');
+    }
+}
+}

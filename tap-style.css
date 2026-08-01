@@ -190,7 +190,7 @@ body::before {
 }
 .whatsapp{
     background-image: url(./imgs/whatsapp.jpg);
-    background-size: 100% 120%;
+    background-size: 100% 150%;
     background-repeat: no-repeat;
     background-position: center center;
 }

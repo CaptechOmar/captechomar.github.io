@@ -202,7 +202,7 @@ body::before {
 }
 .telda{
     background-image: url(./imgs/telda.jpg);
-    background-size: 100% 180%;
+    background-size: 100% 250%;
     background-repeat: no-repeat;
     background-position: center center;
 }

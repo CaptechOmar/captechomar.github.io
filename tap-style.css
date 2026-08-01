@@ -165,13 +165,13 @@ body::before {
 /* Icon & Label Styles */
 .instagram{
     background-image: url(./imgs/instagram.png);
-    background-size: 105% 115%;
+    background-size: 100% 140%;
     background-repeat: no-repeat;
     background-position: center center;
 }
 .twitter{
-    background-image: url(./imgs/x-logo.png);
-    background-size: 101% 101%;
+    background-image: url(./imgs/twitter.jpg);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -184,7 +184,7 @@ body::before {
 }
 .telegram{
     background-image: url(./imgs/telegram.png);
-    background-size: 100% 125%;
+    background-size: 100% 150%;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -196,7 +196,7 @@ body::before {
 }
 .website-icon{
     background-image: url(./imgs/website.png);
-    background-size: 100% 120%;
+    background-size: 100% 150%;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -208,7 +208,7 @@ body::before {
 }
 .instapay{
     background-image: url(./imgs/Instapay.png);
-    background-size: 100% 180%;
+    background-size: 100% 250%;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -221,7 +221,7 @@ body::before {
     
     color: #ffffff; /* Default dark mode text color */
   }
-  .twitter, .telda{
+  .telda{
         filter: invert(1) hue-rotate(180deg);
     }
     .banner-pic{

@@ -184,19 +184,19 @@ body::before {
 }
 .telegram{
     background-image: url(./imgs/telegram.png);
-    background-size: 100% 105%;
+    background-size: 100% 125%;
     background-repeat: no-repeat;
     background-position: center center;
 }
 .whatsapp{
     background-image: url(./imgs/whatsapp.jpg);
-    background-size: 100% 100%;
+    background-size: 100% 120%;
     background-repeat: no-repeat;
     background-position: center center;
 }
 .website-icon{
     background-image: url(./imgs/website.png);
-    background-size: 110% 120%;
+    background-size: 100% 120%;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -221,7 +221,7 @@ body::before {
     
     color: #ffffff; /* Default dark mode text color */
   }
-  .twitter{
+  .twitter, .telda{
         filter: invert(1) hue-rotate(180deg);
     }
     .banner-pic{
